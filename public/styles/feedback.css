@@ -1,0 +1,100 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+}
+
+.maincontent {
+    font-size: 1.8rem;
+    line-height: 160%;
+}
+
+.sidebar {
+    font-size: 1.8rem;
+    line-height: 130%;
+}
+
+.sidebar .sidebar-title {
+    font-size: 1.5em;
+}
+
+.sidebar .sidebar-body li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+    line-height: 160%;
+}
+    .sidebar .sidebar-title {
+    font-size: 2em;
+    }
+}
+
+.form-control {
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+
+.feedback, .feedback-form-title {
+    font-size: 2rem;
+}
+
+.feedback-title {
+    font-size: 1.2em;
+}
+
+.feedback-form-title {
+    font-size: 2em;
+}
+
+.feedback-name {
+    font-size: .6em;
+    font-weight: 100;
+}
+
+.feedback-message {
+    font-weight: 100;
+    font-size: .9em;
+    line-height: 120%;
+    margin-top: 5px;
+}
+
+.feedback-item {
+    border-bottom: 1px solid gray;
+    padding: 8px 0;
+}
+
+.feedback-item:last-of-type {
+    border-bottom: none;
+}
+
+
+/**  pixgrid **/
+
+.pixgrid {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pixgrid img {
+    display: block;
+    padding: 5px;
+    float: left;
+    width: 33.33%;
+    border-radius: 10px;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .pixgrid img {
+    width: 20%;
+    }
+}

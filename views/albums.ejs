@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/albums.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Alter Bridge -- Discograpy</title>
+</head>
+
+<body class="h-100 bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #003566;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="<%= artistLogo %> " alt="Artist Logo" class="w-25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DISCOGRAPHY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/feedback">MESSAGE BOARD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex flex-wrap justify-content-around m-2 mt-5 pt-5">
+        <div class="box-item">
+            <div class="flip-box">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[0].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[0].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[0].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[0].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[0].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-item">
+            <div class="flip-box">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[1].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[1].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[1].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[1].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[1].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-item">
+            <div class="flip-box">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[2].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[2].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[2].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[2].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[2].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-item">
+            <div class="flip-box flex-lg-col">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[3].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[3].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[3].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[3].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[3].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-item">
+            <div class="flip-box">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[4].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[4].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[4].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[4].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[4].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-item">
+            <div class="flip-box">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[5].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[5].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[5].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[5].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[5].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-item">
+            <div class="flip-box">
+                <div class="flip-box-front text-center"
+                    style="background-image: url('<%= array[6].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                    </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('<%= array[6].strAlbumThumb %> ');">
+                    <div class="inner color-white">
+                        <h5 class="flip-box-header"> Released: <%= array[6].intYearReleased %>
+                        </h5>
+                        <h5>
+                            <%= array[6].strAlbum %>
+                        </h5>
+                        <ul class="p-3 m-3 px-3">
+                            <% for (let i=0; i < array.length; i++) {%>
+                                <li class="shadow">
+                                    <%= array[6].tracks[i]; %>
+                                </li>
+
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</html>
