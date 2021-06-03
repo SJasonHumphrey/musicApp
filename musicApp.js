@@ -4,7 +4,7 @@ const socket = require('socket.io');
 
 const app = express();
 
-let port = 3000;
+let port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
