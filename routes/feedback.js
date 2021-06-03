@@ -1,9 +1,12 @@
+const artist = require('../data/artist.json');
 const express = require("express");
 const router = express.Router();
 
 const feedbackData = require("../data/feedback.json"); 
 
 const fs = require("fs");
+
+let logo = artist.artists[0].strArtistLogo;
 
 
 router.use(express.json());
@@ -13,6 +16,7 @@ router.get("/feedback", (req, res) => {
     res.render("feedback", {
     pageTitle: "Alter Bridge - Feedback Form",
     pageID: "feedback",
+    artistLogo: logo 
     });
 });
 

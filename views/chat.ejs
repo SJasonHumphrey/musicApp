@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alter Bridge Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <body class="text-light bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #003566;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="<%= artistLogo %> " alt="Artist Logo" class="w-25">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/albums">DISCOGRAPHY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/feedback">MESSAGE BOARD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CHAT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container pt-5">
+        <form name="chatForm" class="form-horizontal chat-form mt-5">
+            <div class="form-group mt-5">
+                <label for="chat-username" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="chat-username" required placeholder="Enter your name">
+                </div><!-- col-sm-10 -->
+            </div><!-- form-group -->
+            <div class="form-group">
+                <label for="chat-message" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-12">
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter a message, then press enter" class="form-control"
+                            id="chat-message" rows="2" autocomplete="off" required>
+                        <span class="input-group-btn">
+                            <button id="chat-submit" class="btn btn-info" type="submit">Chat</button>
+                        </span>
+                    </div><!-- input-group -->
+                </div><!-- col-sm-10 -->
+            </div><!-- form-group -->
+        </form>
+        <div class="panel panel-default mt-5">
+            <div class="panel-body chat-display bg-light p-2">
+                <p class="text-dark chat-text bg-light p-5">Welcome...add your message using the form above</p>
+            </div><!-- panel-body -->
+        </div><!-- panel-default -->
+        </article><!-- article -->
+        </div><!-- col-sm-12 -->
+        </div><!-- row -->
+        </div><!-- container -->
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="/js/chatStatic.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
